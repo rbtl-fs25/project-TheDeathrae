@@ -4,6 +4,7 @@ subtitle: "What strategies do ETH students use to minimise food waste during wee
 author: "Fionn Smith"
 format: html
 date: today
+bibliography: "http://127.0.0.1:23119/better-bibtex/export/collection?/2/TheDeathrae.bibtex"
 toc: true
 execute: 
   echo: true
@@ -13,9 +14,19 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+library(tidyverse)
+library(gt)
+library(here)
+
+source(here("R", "01-data_download.R"))
+source(here("R", "02-data_cleaning.R"))
+
+```
+
 # Introduction
 
-Food waste... This report...
+Food waste... This report... @lealfilho2024food @pinto2018simple @whitehair2013written
 
 # Methods
 
@@ -24,12 +35,6 @@ Data was collected using a self-administered online questionnaire created in Goo
 # Results
 
 ```{r}
-library(tidyverse)
-library(gt)
-library(here)
-
-source(here("R", "01-data_download.R"))
-source(here("R", "02-data_cleaning.R"))
 
 ```
 
