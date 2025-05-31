@@ -8,19 +8,10 @@
 
 **Author A**
 
--   First name:
--   Surname:
--   ORCID iD
--   Email:
-
-**Author B**
-
--   First name:
--   Surname:
--   ORCID iD
--   Email:
-
-etc.
+-   First name: Fionn
+-   Surname: Smith
+-   ORCID iD: 0009-0005-0172-5024
+-   Email: fsmith@student.ethz.ch
 
 3.  Date of data collection (single date, range, approximate date):
 

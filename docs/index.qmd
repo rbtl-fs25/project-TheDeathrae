@@ -1,3 +1,38 @@
 ---
-title: Test
+title: "Capstone Project Report rbtl-fs25"
+subtitle: "What strategies do ETH students use to minimise food waste during weekday lunches?"
+author: "Fionn Smith"
+format: html
+date: today
+toc: true
+execute: 
+  echo: true
+  warning: false
+editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
+
+# Introduction
+
+Food waste This report
+
+# Methods
+
+Data was collected using a self-administered online questionnaire created in Google Forms. Participants were surveyed by: direct in-person approach with a QR code on campus, posters with QR codes displayed on central university notice boards and digital distribution of links in smaller student groups. In all cases, the purpose of the project was explained beforehand and responses were submitted voluntarily without supervision.
+
+# Results
+
+```{r}
+library(tidyverse)
+library(gt)
+library(here)
+
+source(here("R", "01-data_download.R"))
+source(here("R", "02-data_cleaning.R"))
+
+```
+
+# Conclusions
+
+# References
