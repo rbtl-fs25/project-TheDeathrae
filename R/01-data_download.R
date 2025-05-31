@@ -7,4 +7,4 @@ raw <- read_sheet("https://docs.google.com/spreadsheets/d/1MBd5pOhVV3SIyqT8iwFFA
 raw <- raw |> 
   mutate(across(everything(), as.character))
 
-write_csv(raw, here("data/raw", "raw.csv"))
+write_csv(raw, here("data/raw", "university-lunch-food-waste_raw.csv"))
