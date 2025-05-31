@@ -15,7 +15,7 @@
 
 3.  Date of data collection (single date, range, approximate date):
 
-4.  Geographic location of data collection:
+4.  Geographic location of data collection: Zurich, Switzerland
 
 5.  Information about funding sources that supported the collection of the data:
 

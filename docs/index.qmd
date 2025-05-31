@@ -15,7 +15,7 @@ editor_options:
 
 # Introduction
 
-Food waste This report
+Food waste... This report...
 
 # Methods
 
