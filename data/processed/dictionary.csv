@@ -1,0 +1,26 @@
+variable_name,description
+date_time,date and time of entry
+age_years,age in years
+student_type,"students cycle (bachelor's, masters's, phd)"
+semester,currently enrolled semester number
+consciousness,self-reported consciousness of food waste
+motivation_sustainability,is motivated to care about food waste by sustainability/ environmental impact
+motivation_monetary,is motivated to care about food waste by monetary cost
+motivation_humanitarian,is motivated to care about food waste by humanitarian concerns
+motivation_cultural,is motivated to care about food waste by cultural aspects
+motivation_other,other motivation to care about food waste
+days_uni,number of weekdays in university during lunch time in usual week
+days_cafeteria,number of weekdays at university eating in university cafeteria for lunch in usual week
+days_own,number of weekdays at university eating own food for lunch in usual week
+days_external,number of weekdays at university eating externally bought food for lunch in usual week
+waste_cafeteria,self-reported level of food waste when at university eating in university cafeteria for lunch in usual week
+waste_own,self-reported level of food waste when at university eating own food for lunch in usual week
+waste_external,self-reported level of food waste when at university eating externally bought food for lunch in usual week
+portion_small,does ask for small portion in cafeteria when deemed necessary
+portion_large,does ask for large portion in cafeteria when deemed necessary
+portion_second,does ask for second portion in cafeteria when deemed necessary
+scenario_lunch_friend,handling of leftovers when eating at university in university cafeteria for lunch with friend in usual week
+scenario_lunch_alone,handling of leftovers when eating at university in university cafeteria for lunch alone in usual week
+encouragement,what measures would encourage reduced food waste during weekday lunch in university
+food_avoidance,does avoid food not expecting to eat due to certain ingredients in university cafeteria for lunch in usual week
+strategies,other strategies to reduce food waste during weekday lunch in university

@@ -1,5 +1,5 @@
 ---
-title: "Capstone Project Report rbtl-fs25"
+title: "Capstone Project"
 subtitle: "What strategies do ETH students use to minimise food waste during weekday lunches?"
 author: "Fionn Smith"
 format: html
