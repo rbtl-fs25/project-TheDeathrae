@@ -1,7 +1,9 @@
 ---
-title: "Capstone Project"
-subtitle: "What strategies do ETH students use to minimise food waste during weekday lunches?"
+title: "What strategies do ETH students use to minimise food waste during weekday lunches?"
+subtitle: "Capstone Project"
 author: "Fionn Smith"
+affiliation: "ETH Zurich"
+license: CC-BY-4.0
 format: html
 date: today
 bibliography: "http://127.0.0.1:23119/better-bibtex/export/collection?/2/TheDeathrae.bibtex"
@@ -17,10 +19,9 @@ editor_options:
 ```{r}
 library(tidyverse)
 library(gt)
-library(here)
 
-source(here("R", "01-data_download.R"))
-source(here("R", "02-data_cleaning.R"))
+source(here::here("R/01-data_download.R"))
+source(here::here("R/02-data_cleaning.R"))
 
 ```
 

@@ -1,8 +1,7 @@
 library(googlesheets4)
 library(tidyverse)
-library(here)
 
-unprocessed <- read_csv(here("data/raw", "university-lunch-food-waste_raw.csv"))
+unprocessed <- read_csv(here::here("data/raw/university-lunch-food-waste_raw.csv"))
 
 dictionary <- read_sheet("https://docs.google.com/spreadsheets/d/1f02fDN7ROtJ7Q3hARhn18RFNabMviE9o3mTy77kdWj4/edit?gid=0#gid=0")
 
@@ -91,6 +90,6 @@ processed <- unprocessed |>
     TRUE ~ .
   )))
 
-write_csv(processed, here("data/processed", "university-lunch-food-waste_processed.csv"))
+write_csv(processed, here::here("data/processed/university-lunch-food-waste_processed.csv"))
 
-write_csv(dictionary, here("data/processed", "dictionary.csv"))
+write_csv(dictionary, here::here("data/processed/dictionary.csv"))

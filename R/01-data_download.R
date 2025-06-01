@@ -1,10 +1,8 @@
 library(googlesheets4)
 library(tidyverse)
-library(here)
 
 raw <- read_sheet("https://docs.google.com/spreadsheets/d/1MBd5pOhVV3SIyqT8iwFFAf5LiRK3lbRDGvhVYhaqqEw/edit?resourcekey=&gid=1360760891#gid=1360760891")
 
-raw <- raw |> 
-  mutate(across(everything(), as.character))
-
-write_csv(raw, here("data/raw", "university-lunch-food-waste_raw.csv"))
+raw |> 
+  mutate(across(everything(), as.character)) |> # necessary due to differing data types in some columns from testing
+  write_csv(here::here("data/raw/university-lunch-food-waste_raw.csv"))
