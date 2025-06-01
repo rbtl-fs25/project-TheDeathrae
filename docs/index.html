@@ -161,15 +161,38 @@ div.csl-indent {
 </div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>In 2019 global food production accounted for approximately 31% of worldwide greenhouse gas emissions <span class="citation" data-cites="tubiellopre2022">Tubiello et al. (<a href="#ref-tubiellopre2022" role="doc-biblioref">2022</a>)</span>. At the same time, preventable food waste is highly prevalent in Europe <span class="citation" data-cites="pinto2018simple">Pinto et al. (<a href="#ref-pinto2018simple" role="doc-biblioref">2018</a>)</span>. In Switzerland households are responsible for 38% and gastronomy for 14% of eco-points (EPs) caused by preventable food waste <span class="citation" data-cites="beretta2019lebensmittelverluste">Beretta and Hellweg (<a href="#ref-beretta2019lebensmittelverluste" role="doc-biblioref">2019</a>)</span>. Reducing food waste has the potential to decrease greenhouse gas emissions. To gain insight into consumer behaviour and strategies for food waste reduction, this report examines a survey conducted as part of the Research Beyond the Lab course in FS25 to analyse what strategies ETH Zurich university students use to minimise food waste during weekday lunches.</p>
+<p>In 2019, global food production accounted for approximately 31% of worldwide greenhouse gas emissions <span class="citation" data-cites="tubiellopre2022">Tubiello et al. (<a href="#ref-tubiellopre2022" role="doc-biblioref">2022</a>)</span>. At the same time, preventable food waste is highly prevalent in Europe <span class="citation" data-cites="pinto2018simple">Pinto et al. (<a href="#ref-pinto2018simple" role="doc-biblioref">2018</a>)</span>. In Switzerland, households are responsible for 38% and gastronomy for 14% of eco-points (EPs) caused by preventable food waste <span class="citation" data-cites="beretta2019lebensmittelverluste">Beretta and Hellweg (<a href="#ref-beretta2019lebensmittelverluste" role="doc-biblioref">2019</a>)</span>. Reducing food waste has the potential to decrease greenhouse gas emissions. To gain insight into consumer behaviour and strategies for food waste reduction, this report examines a survey conducted as part of the Research Beyond the Lab course in FS25 to analyse what strategies ETH Zurich university students use to minimise food waste during weekday lunches.</p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>Data was collected anonymously using a self-administered online questionnaire created in Google Forms. A total of 31 participants were surveyed by: (1) direct in-person approach where a QR code for participation was presented to passing students outside on campus on a weekday during the semester over a span of 20 minutes, (2) posters with QR codes displayed on central university notice boards in buildings on both ETH Zurich campuses for 12 days and (3) digital distribution of a link through a student-specific group chat.<br>
-In all cases, the purpose of the project was explained beforehand and responses were submitted voluntarily without supervision. The survey was open for responses for 12 days, excluding prior testing period.</p>
+<p>Data was collected anonymously using a self-administered online questionnaire created in Google Forms. A total of 31 participants were surveyed by: (1) direct in-person approach, where a QR code for participation was presented to passing students outside on campus on a weekday during the semester over a span of 20 minutes; (2) posters with QR codes displayed on central university notice boards in buildings on both ETH Zurich campuses for 12 days; and (3) digital distribution of a link through a student-specific group chat.<br>
+In all cases, the purpose of the project was explained beforehand, and responses were submitted voluntarily without supervision. The survey was open for responses for 12 days, excluding a prior testing period.</p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/processed/university-lunch-food-waste_processed.csv"</span>))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(consciousness, motivation_sustainability, motivation_monetary, motivation_humanitarian, motivation_cultural)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 31 × 5
+   consciousness motivation_sustainability motivation_monetary
+           &lt;dbl&gt; &lt;lgl&gt;                     &lt;lgl&gt;              
+ 1             4 TRUE                      TRUE               
+ 2             5 TRUE                      TRUE               
+ 3             2 TRUE                      TRUE               
+ 4             3 TRUE                      FALSE              
+ 5             4 TRUE                      TRUE               
+ 6             4 TRUE                      TRUE               
+ 7             5 TRUE                      TRUE               
+ 8             4 TRUE                      TRUE               
+ 9             5 TRUE                      TRUE               
+10             5 TRUE                      FALSE              
+# ℹ 21 more rows
+# ℹ 2 more variables: motivation_humanitarian &lt;lgl&gt;, motivation_cultural &lt;lgl&gt;</code></pre>
+</div>
+</div>
 </section>
 <section id="conclusions" class="level1">
 <h1>Conclusions</h1>

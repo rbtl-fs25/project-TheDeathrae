@@ -32,17 +32,20 @@ source(here::here("R/02-data_cleaning.R"))
 
 # Introduction
 
-In 2019 global food production accounted for approximately 31% of worldwide greenhouse gas emissions @tubiellopre2022. At the same time, preventable food waste is highly prevalent in Europe @pinto2018simple. In Switzerland households are responsible for 38% and gastronomy for 14% of eco-points (EPs) caused by preventable food waste @beretta2019lebensmittelverluste. Reducing food waste has the potential to decrease greenhouse gas emissions. To gain insight into consumer behaviour and strategies for food waste reduction, this report examines a survey conducted as part of the Research Beyond the Lab course in FS25 to analyse what strategies ETH Zurich university students use to minimise food waste during weekday lunches.
+In 2019, global food production accounted for approximately 31% of worldwide greenhouse gas emissions @tubiellopre2022. At the same time, preventable food waste is highly prevalent in Europe @pinto2018simple. In Switzerland, households are responsible for 38% and gastronomy for 14% of eco-points (EPs) caused by preventable food waste @beretta2019lebensmittelverluste. Reducing food waste has the potential to decrease greenhouse gas emissions. To gain insight into consumer behaviour and strategies for food waste reduction, this report examines a survey conducted as part of the Research Beyond the Lab course in FS25 to analyse what strategies ETH Zurich university students use to minimise food waste during weekday lunches.
 
 # Methods
 
-Data was collected anonymously using a self-administered online questionnaire created in Google Forms. A total of 31 participants were surveyed by: (1) direct in-person approach where a QR code for participation was presented to passing students outside on campus on a weekday during the semester over a span of 20 minutes, (2) posters with QR codes displayed on central university notice boards in buildings on both ETH Zurich campuses for 12 days and (3) digital distribution of a link through a student-specific group chat. \
-In all cases, the purpose of the project was explained beforehand and responses were submitted voluntarily without supervision. The survey was open for responses for 12 days, excluding prior testing period.
+Data was collected anonymously using a self-administered online questionnaire created in Google Forms. A total of 31 participants were surveyed by: (1) direct in-person approach, where a QR code for participation was presented to passing students outside on campus on a weekday during the semester over a span of 20 minutes; (2) posters with QR codes displayed on central university notice boards in buildings on both ETH Zurich campuses for 12 days; and (3) digital distribution of a link through a student-specific group chat. \
+In all cases, the purpose of the project was explained beforehand, and responses were submitted voluntarily without supervision. The survey was open for responses for 12 days, excluding a prior testing period.
 
 # Results
 
 ```{r}
+data <- read_csv(here::here("data/processed/university-lunch-food-waste_processed.csv"))
 
+data |> 
+  summarise(consciousness, motivation_sustainability, motivation_monetary, motivation_humanitarian, motivation_cultural)
 ```
 
 # Conclusions
