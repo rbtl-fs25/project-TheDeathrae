@@ -1,9 +1,14 @@
 ---
 title: "What strategies do ETH students use to minimise food waste during weekday lunches?"
 subtitle: "Capstone Project"
-author: "Fionn Smith"
-affiliation: "ETH Zurich"
-license: CC-BY-4.0
+author:
+  name: "Fionn Smith"
+  orcid: 0009-0005-0172-5024
+  email: fsmith@student.ethz.ch
+  affiliation: 
+    name: ETH Zurich
+    url: https://ethz.ch/de.html
+license: "CC BY 4.0"
 format: html
 date: today
 bibliography: "http://127.0.0.1:23119/better-bibtex/export/collection?/2/TheDeathrae.bibtex"
