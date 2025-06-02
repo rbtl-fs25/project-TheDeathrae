@@ -86,9 +86,18 @@ processed <- unprocessed |>
   mutate(across(
     c(motivation_other, strategies), ~case_when(
     . == "no" ~ NA_character_,
+    . == "not really" ~ NA_character_,
     . == "-" ~ NA_character_,
     TRUE ~ .
+  ))) |> 
+  
+  # removing bad data
+  mutate(across(
+    c(days_uni, days_cafeteria, days_own, days_external), ~case_when(
+      days_uni < (days_cafeteria + days_own + days_external) ~ NA,
+      TRUE ~ .
   )))
+    
 
 write_csv(processed, here::here("data/processed/university-lunch-food-waste_processed.csv"))
 

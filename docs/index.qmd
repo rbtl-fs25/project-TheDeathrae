@@ -1,5 +1,5 @@
 ---
-title: "What strategies do ETH students use to minimise food waste during weekday lunches?"
+title: "What strategies do ETH Zurich students use to minimise food waste during weekday lunches?"
 subtitle: "Capstone Project"
 author:
   name: "Fionn Smith"
@@ -24,6 +24,7 @@ editor_options:
 ```{r}
 library(tidyverse)
 library(gt)
+library(ggthemes)
 
 source(here::here("R/01-data_download.R"))
 source(here::here("R/02-data_cleaning.R"))
@@ -42,10 +43,104 @@ In all cases, the purpose of the project was explained beforehand, and responses
 # Results
 
 ```{r}
-data <- read_csv(here::here("data/processed/university-lunch-food-waste_processed.csv"))
+survey_data <- read_csv(here::here("data/processed/university-lunch-food-waste_processed.csv"))
+```
 
-data |> 
-  summarise(consciousness, motivation_sustainability, motivation_monetary, motivation_humanitarian, motivation_cultural)
+```{r}
+consciousness_mean <- round(mean(survey_data$consciousness), 2)
+```
+
+The mean self reported consciousness of food waste among students is `r consciousness_mean` on a scale of 1 (not conscious at all) to 5 (very conscious). @fig-consciousness shows the distribution by study cycle. Master's students reported highest levels of consciousness, while Bachelor's and PhD students see a peak at 3/5. However, due to the low sample size, especially for PhD students, no clear conclusions can be drawn, leaving the correlation of self reported consciousness to study cycle requiring further invest
+
+```{r}
+#| label: fig-consciousness
+#| fig-cap: "Consciousness of food waste by study cycle"
+
+consciousness_data <- survey_data |> 
+  select(consciousness, student_type) |> 
+  mutate(student_type = case_when(
+    student_type == "bachelor" ~ "Bachelor's",
+    student_type == "master" ~ "Master's",
+    student_type == "phd" ~ "PhD"
+  ))
+
+ggplot(data = consciousness_data, 
+       aes(x = consciousness, 
+           fill = student_type)) +
+  geom_bar(col = "grey30") +
+  theme_fivethirtyeight() +
+  scale_color_colorblind() +
+  labs(x = "Consciousness Level",
+       y = "Count",
+       fill = "Study Cycle")
+
+write_csv(consciousness_data, here::here("data/final/plt-consciousness.csv"))
+```
+
+Among students sustainability was found overwhelmingly to be a motivation to care about food waste @tbl-motivation. This suggests that the environmental impact associated with food production is well known and considered an important issue.
+
+```{r}
+#| label: tbl-motivation
+#| tbl-cap: "Motivation to care about food waste proportion"
+
+motivation_data <- survey_data |> 
+  select(motivation_sustainability, motivation_monetary, motivation_humanitarian, motivation_cultural) |> 
+  summarise(across(everything(), ~mean(. == TRUE))) |> 
+  pivot_longer(cols = everything(), names_to = "Motivation", values_to = "Yes") |>
+  mutate(No = 1 - Yes) |> 
+  mutate(Motivation = case_when(
+    Motivation == "motivation_sustainability" ~ "Sustainability",
+    Motivation == "motivation_monetary" ~ "Monetary",
+    Motivation == "motivation_humanitarian" ~ "Humanitarian",
+    Motivation == "motivation_cultural" ~ "Cultural"
+  ))
+
+motivation_data |> 
+  knitr::kable(digits = 2)
+
+write_csv(motivation_data, here::here("data/final/tbl-motivation.csv"))
+```
+
+The most common reported lunch source is bringing lunch from home to university, followed by eating in a cafeteria with buying externally clear lowest @tbl-lunch_source. When considering this in connection with @tbl-lunch_waste where the only sources reporting higher than "near none" on food waste are university cafeterias, university cafeteria food waste stands out as a potential point of improvement.
+
+```{r}
+#| label: tbl-lunch_source
+#| tbl-cap: "Days of lunch source per week (0-5)"
+
+lunch_source_data <- survey_data |> 
+  filter(!is.na(days_uni)) |> 
+  select(days_cafeteria, days_own, days_external) |> 
+  summarise(across(everything(), ~mean(.))) |> 
+  rename(
+    "Cafeteria" = "days_cafeteria",
+    "Brought from home" = "days_own",
+    "External" = "days_external"
+  )
+
+lunch_source_data |> 
+  knitr::kable(digits = 2)
+
+write_csv(lunch_source_data, here::here("data/final/tbl-lunch_source_data.csv"))
+```
+
+```{r}
+#| label: tbl-lunch_waste
+#| tbl-cap: "Waste by lunch source (1-5)"
+
+lunch_waste_data <- survey_data |> 
+  filter(!is.na(days_uni)) |> 
+  select(waste_cafeteria, waste_own, waste_external) |> 
+  summarise(across(everything(), ~mean(.))) |> 
+  rename(
+    "Cafeteria" = "waste_cafeteria",
+    "Brought from home" = "waste_own",
+    "External" = "waste_external"
+  )
+
+lunch_waste_data |> 
+  knitr::kable(digits = 2)
+
+write_csv(lunch_waste_data, here::here("data/final/tbl-lunch_waste_data.csv"))
 ```
 
 # Conclusions
