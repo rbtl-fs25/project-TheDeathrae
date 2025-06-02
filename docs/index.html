@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Fionn Smith">
-<meta name="dcterms.date" content="2025-06-02">
+<meta name="dcterms.date" content="2025-06-03">
 
 <title>What strategies do ETH Zurich students use to minimise food waste during weekday lunches?</title>
 <style>
@@ -131,7 +131,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 2, 2025</p>
+      <p class="date">June 3, 2025</p>
     </div>
   </div>
   
@@ -181,12 +181,12 @@ In all cases, the purpose of the project was explained beforehand, and responses
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> consciousness_data, </span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> consciousness, </span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> student_type)) <span class="sc">+</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Consciousness Level"</span>,</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>,</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Study Cycle"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Consciousness Level"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Study Cycle"</span>) <span class="sc">+</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>()</span>
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(consciousness_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-consciousness.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -213,7 +213,7 @@ Figure&nbsp;1: Self-reported consciousness of food waste by study cycle
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    Motivation <span class="sc">==</span> <span class="st">"motivation_sustainability"</span> <span class="sc">~</span> <span class="st">"Sustainability"</span>,</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    Motivation <span class="sc">==</span> <span class="st">"motivation_monetary"</span> <span class="sc">~</span> <span class="st">"Monetary"</span>,</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    Motivation <span class="sc">==</span> <span class="st">"motivation_humanitarian"</span> <span class="sc">~</span> <span class="st">"Humanitarian"</span>,</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    Motivation <span class="sc">==</span> <span class="st">"motivation_cultural"</span> <span class="sc">~</span> <span class="st">"Cultural"</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    Motivation <span class="sc">==</span> <span class="st">"motivation_cultural"</span> <span class="sc">~</span> <span class="st">"Culture"</span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  ))</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>motivation_data <span class="sc">|&gt;</span> </span>
@@ -251,7 +251,7 @@ Table&nbsp;1: Motivation to care about food waste proportion
 <td style="text-align: right;">0.29</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Cultural</td>
+<td style="text-align: left;">Culture</td>
 <td style="text-align: right;">0.42</td>
 <td style="text-align: right;">0.58</td>
 </tr>
@@ -280,7 +280,7 @@ Table&nbsp;1: Motivation to care about food waste proportion
 <div id="tbl-lunch_source" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lunch_source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Days of lunch source per week (0-5)
+Table&nbsp;2: Average days of lunch source per week (0-5)
 </figcaption>
 <div aria-describedby="tbl-lunch_source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -322,7 +322,7 @@ Table&nbsp;2: Days of lunch source per week (0-5)
 <div id="tbl-lunch_waste" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lunch_waste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: Waste by lunch source (1-5)
+Table&nbsp;3: Average self-reported waste by lunch source (1-5)
 </figcaption>
 <div aria-describedby="tbl-lunch_waste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -347,17 +347,18 @@ Table&nbsp;3: Waste by lunch source (1-5)
 </figure>
 </div>
 </div>
-<p>To further investigate the reasons behind higher food waste in university cafeterias compared to other sources of lunch, students were presented with different scenarios and asked to choose their most likely approach to leftover food. Throwing food away was the least common choice, both in the case of eating lunch in a university cafeteria alone and eating with a friend. However, when eating alone, throwing leftovers away became more prevalent (<a href="#fig-scenarios" class="quarto-xref">Figure&nbsp;2</a>). This suggests…</p>
+<p>To further investigate the reasons behind higher food waste in university cafeterias compared to other sources of lunch, students were presented with different scenarios and asked to choose their most likely approach to leftover food. Throwing food away was the least common choice, both in the case of eating lunch in a university cafeteria alone and eating with a friend. However, when eating alone, throwing leftovers away became more prevalent (<a href="#fig-scenarios" class="quarto-xref">Figure&nbsp;2</a>). This suggests that students choose not to take leftovers home if possible, but are more likely to when faced with wasting food.</p>
+<p><a href="#fig-encouragement" class="quarto-xref">Figure&nbsp;3</a> shows that there is potential to increase the willingness to take leftovers home and thus reduce food waste. Most students reported that having either their own reusable containers or having access to such would make them more likely to take leftovers home.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>scenario_data <span class="ot">&lt;-</span> survey_data <span class="sc">|&gt;</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(scenario_lunch_alone, scenario_lunch_friend) <span class="sc">|&gt;</span> </span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"Scenario"</span>, <span class="at">values_to =</span> <span class="st">"Action"</span>) <span class="sc">|&gt;</span>   <span class="fu">mutate</span>(</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Scenario =</span> <span class="fu">case_when</span>(</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      Scenario <span class="sc">==</span> <span class="st">"scenario_lunch_alone"</span> <span class="sc">~</span> <span class="st">"Eating lunch alone"</span>,</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      Scenario <span class="sc">==</span> <span class="st">"scenario_lunch_friend"</span> <span class="sc">~</span> <span class="st">"Eating Lunch with a friend"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      Scenario <span class="sc">==</span> <span class="st">"scenario_lunch_friend"</span> <span class="sc">~</span> <span class="st">"Eating lunch with a friend"</span></span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    ),</span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">Action =</span> <span class="fu">case_when</span>(</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>      Action <span class="sc">==</span> <span class="st">"pass_on"</span> <span class="sc">~</span> <span class="st">"Pass on"</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>      Action <span class="sc">==</span> <span class="st">"pass_on"</span> <span class="sc">~</span> <span class="st">"Share"</span>,</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>      Action <span class="sc">==</span> <span class="st">"take_home"</span> <span class="sc">~</span> <span class="st">"Take home"</span>,</span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>      Action <span class="sc">==</span> <span class="st">"throw_away"</span> <span class="sc">~</span> <span class="st">"Throw away"</span></span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  ))</span>
@@ -365,13 +366,14 @@ Table&nbsp;3: Waste by lunch source (1-5)
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> scenario_data, </span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Action)) <span class="sc">+</span></span>
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span>Scenario, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"First choice"</span>,</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>)</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(scenario_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-scenarios.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"First choice"</span>,</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of students"</span>) <span class="sc">+</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>()</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(scenario_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-scenarios.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-scenarios" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -391,21 +393,22 @@ Figure&nbsp;2: Leftover food scenarios
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="st">"Encouragement"</span> <span class="ot">=</span> <span class="st">"encouragement"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">Encouragement =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"tupperware"</span> <span class="sc">~</span> <span class="st">"Own tupperware"</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"tupperware"</span> <span class="sc">~</span> <span class="st">"Own reusable container"</span>,</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"provided_single_use"</span> <span class="sc">~</span> <span class="st">"Single-use packaging"</span>,</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"provided_tupperware"</span> <span class="sc">~</span> <span class="st">"Tupperware provided"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"provided_tupperware"</span> <span class="sc">~</span> <span class="st">"Reusable container provided"</span>,</span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>      Encouragement <span class="sc">==</span> <span class="st">"none"</span> <span class="sc">~</span> <span class="st">"None"</span></span>
 <span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  ))</span>
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> encouragement_data, </span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Encouragement)) <span class="sc">+</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Factor"</span>,</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>)</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(encouragement_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-encouragement.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Factor"</span>,</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of students"</span>) <span class="sc">+</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>()</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(encouragement_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-encouragement.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-encouragement" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -427,18 +430,22 @@ Figure&nbsp;3: Methods to encourage food waste reduction
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>      Portion <span class="sc">==</span> <span class="st">"portion_large"</span> <span class="sc">~</span> <span class="st">"Large portion"</span>,</span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>      Portion <span class="sc">==</span> <span class="st">"portion_small"</span> <span class="sc">~</span> <span class="st">"Small portion"</span>,</span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>      Portion <span class="sc">==</span> <span class="st">"portion_second"</span> <span class="sc">~</span> <span class="st">"Second portion"</span>,</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  ))</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> portions_data, </span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Choice)) <span class="sc">+</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span>Portion, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Choice"</span>,</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>)</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(encouragement_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-portions.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Choice =</span> <span class="fu">case_when</span>(</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>      Choice <span class="sc">==</span> <span class="st">"TRUE"</span> <span class="sc">~</span> <span class="st">"Yes"</span>,</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>      Choice <span class="sc">==</span> <span class="st">"FALSE"</span> <span class="sc">~</span> <span class="st">"No"</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> portions_data, </span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Choice)) <span class="sc">+</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"#377EB8"</span>, <span class="at">col =</span> <span class="st">"grey30"</span>) <span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span>Portion, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_igray</span>() <span class="sc">+</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Choice"</span>,</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of students"</span>)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(encouragement_data, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/final/fig-portions.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-portions" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -457,7 +464,7 @@ Figure&nbsp;4: Portion choice in cafeterias
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(food_avoidance) <span class="sc">|&gt;</span> </span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(food_avoidance) <span class="sc">|&gt;</span> </span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="st">"Avoidance"</span> <span class="ot">=</span> <span class="st">"food_avoidance"</span>,</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Count"</span> <span class="ot">=</span> <span class="st">"n"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Number of students"</span> <span class="ot">=</span> <span class="st">"n"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Avoidance =</span> <span class="fu">case_when</span>(</span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    Avoidance <span class="sc">==</span> <span class="st">"yes"</span> <span class="sc">~</span> <span class="st">"Yes"</span>,</span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    Avoidance <span class="sc">==</span> <span class="st">"sometimes"</span> <span class="sc">~</span> <span class="st">"Sometimes"</span>,</span>
@@ -478,7 +485,7 @@ Table&nbsp;4: Avoidance of dislikes in cafeteria food
 <thead>
 <tr class="header">
 <th style="text-align: left;">Avoidance</th>
-<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Number of students</th>
 </tr>
 </thead>
 <tbody>
@@ -505,7 +512,7 @@ Table&nbsp;4: Avoidance of dislikes in cafeteria food
 <section id="conclusions" class="level1">
 <h1>Conclusions</h1>
 <ul>
-<li><p>Students report high levels of consciousness of food waste, with the vast majority consideirng sustainability as a motivation</p></li>
+<li><p>Students report high levels of consciousness of food waste, with the vast majority considering sustainability as a motivation</p></li>
 <li><p>University cafeterias are a common sources of weekday lunch in university and lead to more food waste than other sources</p></li>
 <li></li>
 </ul>

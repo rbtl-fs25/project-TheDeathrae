@@ -47,7 +47,7 @@ survey_data <- read_csv(here::here("data/processed/university-lunch-food-waste_p
 consciousness_mean <- round(mean(survey_data$consciousness), 2)
 ```
 
-The mean self-reported consciousness of food waste among students is `r consciousness_mean` on a scale of 1 (not conscious at all) to 5 (very conscious). @fig-consciousness shows the distribution by study cycle. Master's students reported highest levels of consciousness, while Bachelor's and PhD students see a peak at 3/5. However, due to the low sample size, especially for PhD students, no clear conclusions can be drawn, suggesting the need for further investigation into the correlation of self-reported consciousness of food waste to study cycle.
+The mean self-reported consciousness of food waste among students was `r consciousness_mean` on a scale of 1 (not conscious at all) to 5 (very conscious). @fig-consciousness shows the distribution by study cycle. Master's students reported highest levels of consciousness, while a majority of Bachelor's and PhD students selected 3 out of 5. However, due to the small sample size, especially for PhD students, no clear conclusions can be drawn, suggesting the need for further investigation into the relationship between study cycle and food waste consciousness.
 
 ```{r}
 #| label: fig-consciousness
@@ -64,17 +64,17 @@ consciousness_data <- survey_data |>
 ggplot(data = consciousness_data, 
        aes(x = consciousness, 
            fill = student_type)) +
-  geom_bar(col = "grey30") +
-  theme_igray() +
-  scale_color_colorblind() +
   labs(x = "Consciousness Level",
        y = "Count",
-       fill = "Study Cycle")
+       fill = "Study Cycle") +
+  geom_bar(col = "grey30") +
+  theme_igray() +
+  scale_color_colorblind()
 
 write_csv(consciousness_data, here::here("data/final/fig-consciousness.csv"))
 ```
 
-Sustainability was reported as a motivation to care about food waste by a large majority of students, more frequently than other reasons (@tbl-motivation). This suggests that the environmental impact associated with food production is widely recognised and considered an important issue.
+Sustainability was reported as a motivation to care about food waste by a large majority of students, more frequently than other reasons (@tbl-motivation). This suggests that the environmental impact associated with food production is widely recognised and considered an important issue among students.
 
 ```{r}
 #| label: tbl-motivation
@@ -89,7 +89,7 @@ motivation_data <- survey_data |>
     Motivation == "motivation_sustainability" ~ "Sustainability",
     Motivation == "motivation_monetary" ~ "Monetary",
     Motivation == "motivation_humanitarian" ~ "Humanitarian",
-    Motivation == "motivation_cultural" ~ "Cultural"
+    Motivation == "motivation_cultural" ~ "Culture"
   ))
 
 motivation_data |> 
@@ -98,11 +98,11 @@ motivation_data |>
 write_csv(motivation_data, here::here("data/final/tbl-motivation.csv"))
 ```
 
-In terms of lunch sources, bringing lunch from home to university was found to be most prevalent, followed by eating in a cafeteria. Buying lunch externally was clearly the least common choice (@tbl-lunch_source). When considering food waste the only sources reporting higher than "near none" on food waste are university cafeterias (@tbl-lunch_waste). This highlights university cafeteria food waste as a potential point of improvement.
+In terms of lunch sources, bringing lunch from home to university was found to be most prevalent, followed by eating in a cafeteria. Buying lunch externally was the least frequently reported option (@tbl-lunch_source). When considering food waste the only sources reporting higher than "near none" on food waste are university cafeterias (@tbl-lunch_waste). This highlights university cafeteria food waste as a potential point of improvement.
 
 ```{r}
 #| label: tbl-lunch_source
-#| tbl-cap: "Days of lunch source per week (0-5)"
+#| tbl-cap: "Average days of lunch source per week (0-5)"
 
 lunch_source_data <- survey_data |> 
   filter(!is.na(days_uni)) |> 
@@ -122,7 +122,7 @@ write_csv(lunch_source_data, here::here("data/final/tbl-lunch_source_data.csv"))
 
 ```{r}
 #| label: tbl-lunch_waste
-#| tbl-cap: "Waste by lunch source (1-5)"
+#| tbl-cap: "Average self-reported waste by lunch source (1-5)"
 
 lunch_waste_data <- survey_data |> 
   filter(!is.na(days_uni)) |> 
@@ -140,7 +140,7 @@ lunch_waste_data |>
 write_csv(lunch_waste_data, here::here("data/final/tbl-lunch_waste_data.csv"))
 ```
 
-To further investigate the reasons behind higher food waste in university cafeterias compared to other sources of lunch, students were presented with different scenarios and asked to choose their most likely approach to leftover food. Throwing food away was the least common choice, both in the case of eating lunch in a university cafeteria alone and eating with a friend. However, when eating alone, throwing leftovers away became more prevalent (@fig-scenarios). This suggests...
+To further investigate the reasons behind higher food waste in university cafeterias compared to other sources of lunch, students were presented with different scenarios and asked to choose their most likely approach to leftover food. Throwing away leftover food was the least common choice in both scenarios, eating lunch in a university cafeteria alone and eating with a friend. However, when eating alone, throwing leftovers away became more prevalent (@fig-scenarios). This suggests that students choose not to take leftovers home if possible, but are more likely to when faced with wasting food.
 
 ```{r}
 #| label: fig-scenarios
@@ -151,10 +151,10 @@ scenario_data <- survey_data |>
   pivot_longer(cols = everything(), names_to = "Scenario", values_to = "Action") |>   mutate(
     Scenario = case_when(
       Scenario == "scenario_lunch_alone" ~ "Eating lunch alone",
-      Scenario == "scenario_lunch_friend" ~ "Eating Lunch with a friend"
+      Scenario == "scenario_lunch_friend" ~ "Eating lunch with a friend"
     ),
     Action = case_when(
-      Action == "pass_on" ~ "Pass on",
+      Action == "pass_on" ~ "Share",
       Action == "take_home" ~ "Take home",
       Action == "throw_away" ~ "Throw away"
   ))
@@ -162,14 +162,16 @@ scenario_data <- survey_data |>
 ggplot(data = scenario_data, 
        aes(x = Action)) +
   facet_grid(~Scenario, scales = "free") +
+  labs(x = "First choice",
+       y = "Number of students") +
   geom_bar(fill = "#377EB8", col = "grey30") +
   theme_igray() +
-  scale_color_colorblind() +
-  labs(x = "First choice",
-       y = "Count")
+  scale_color_colorblind()
 
 write_csv(scenario_data, here::here("data/final/fig-scenarios.csv"))
 ```
+
+@fig-encouragement shows that there is potential to increase the willingness to take leftovers home when eating in university cafeterias and thus reduce food waste. Most students reported that having either their own reusable containers or having access to such would make them more likely to take leftovers home. This may reflect that while reusable containers are widely available at ETH Zurich cafeterias, the system is not implemented in a way that encourages use for leftovers or that knowledge of its existence is not widespread.
 
 ```{r}
 #| label: fig-encouragement
@@ -180,22 +182,25 @@ encouragement_data <- survey_data |>
   rename("Encouragement" = "encouragement") |> 
   mutate(
     Encouragement = case_when(
-      Encouragement == "tupperware" ~ "Own tupperware",
+      Encouragement == "tupperware" ~ "Own reusable container",
       Encouragement == "provided_single_use" ~ "Single-use packaging",
-      Encouragement == "provided_tupperware" ~ "Tupperware provided",
+      Encouragement == "provided_tupperware" ~ "Reusable container provided",
       Encouragement == "none" ~ "None"
   ))
 
 ggplot(data = encouragement_data, 
        aes(x = Encouragement)) +
+  labs(x = "Factor",
+       y = "Number of students") +
   geom_bar(fill = "#377EB8", col = "grey30") +
   theme_igray() +
-  scale_color_colorblind() +
-  labs(x = "Factor",
-       y = "Count")
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_color_colorblind()
 
 write_csv(encouragement_data, here::here("data/final/fig-encouragement.csv"))
 ```
+
+Further, less than half of students ask for adjusted portion sizes according to their level of hunger in university cafeterias (@fig-portions). The low numbers for large and second portions could be attributed to internal cafeteria policies limiting responsiveness to such requests, while for small portion sizes, the cause cannot be directly inferred from the data collected. However, portion size variation presents a further potential opportunity for reduced food waste.
 
 ```{r}
 #| label: fig-portions
@@ -208,6 +213,10 @@ portions_data <- survey_data |>
       Portion == "portion_large" ~ "Large portion",
       Portion == "portion_small" ~ "Small portion",
       Portion == "portion_second" ~ "Second portion",
+  )) |> 
+  mutate(Choice = case_when(
+      Choice == "TRUE" ~ "Yes",
+      Choice == "FALSE" ~ "No"
   ))
 
 ggplot(data = portions_data, 
@@ -217,7 +226,7 @@ ggplot(data = portions_data,
   theme_igray() +
   scale_color_colorblind() +
   labs(x = "Choice",
-       y = "Count")
+       y = "Number of students")
 
 write_csv(encouragement_data, here::here("data/final/fig-portions.csv"))
 ```
@@ -230,7 +239,7 @@ avoidance_data <- survey_data |>
   select(food_avoidance) |> 
   count(food_avoidance) |> 
   rename("Avoidance" = "food_avoidance",
-         "Count" = "n") |> 
+         "Number of students" = "n") |> 
   mutate(Avoidance = case_when(
     Avoidance == "yes" ~ "Yes",
     Avoidance == "sometimes" ~ "Sometimes",
@@ -245,7 +254,7 @@ write_csv(avoidance_data, here::here("data/final/tbl-avoidance.csv"))
 
 # Conclusions
 
--   Students report high levels of consciousness of food waste, with the vast majority consideirng sustainability as a motivation
+-   Students report high levels of consciousness of food waste, with the vast majority considering sustainability as a motivation
 
 -   University cafeterias are a common sources of weekday lunch in university and lead to more food waste than other sources
 
