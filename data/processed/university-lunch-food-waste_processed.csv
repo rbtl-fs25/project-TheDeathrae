@@ -1,32 +1,32 @@
 id,date_time,age_years,student_type,semester,consciousness,motivation_sustainability,waste_cafeteria,portion_small,scenario_lunch_friend,scenario_lunch_alone,food_avoidance,strategies,days_uni,days_cafeteria,days_own,days_external,waste_own,waste_external,motivation_other,encouragement,motivation_monetary,motivation_humanitarian,motivation_cultural,portion_large,portion_second
-1,2025-05-19T14:20:02Z,22,bachelor,6,4,TRUE,1,TRUE,pass_on,throw_away,2,i have to 99% no leftovers because i am really hungry normally,1,1,0,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,TRUE,FALSE
-2,2025-05-19T14:47:54Z,21,master,4,5,TRUE,2,FALSE,pass_on,throw_away,2,NA,3,0,0,0,1,1,NA,none,TRUE,FALSE,FALSE,FALSE,FALSE
-3,2025-05-19T18:06:41Z,26,phd,1,2,TRUE,1,FALSE,pass_on,throw_away,2,NA,5,2,2,0,1,1,NA,provided_single_use,TRUE,FALSE,FALSE,FALSE,FALSE
-4,2025-05-19T22:08:31Z,22,bachelor,6,3,TRUE,2,FALSE,pass_on,throw_away,2,NA,NA,NA,NA,NA,1,1,NA,none,FALSE,TRUE,FALSE,FALSE,FALSE
-5,2025-05-27T12:39:41Z,26,master,1,4,TRUE,1,TRUE,throw_away,take_home,1,"not buying menus, but choosing from the buffet and paying per gr, which is often more expensive",NA,NA,NA,NA,1,1,the people starving,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-6,2025-05-27T12:51:14Z,25,master,2,4,TRUE,1,FALSE,pass_on,take_home,2,"i always make my own lunch, because it is cheaper",4,0,4,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,TRUE
-7,2025-05-27T13:08:26Z,24,master,10,5,TRUE,1,FALSE,pass_on,take_home,2,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,TRUE
-8,2025-05-27T13:16:11Z,21,bachelor,2,4,TRUE,1,TRUE,pass_on,take_home,2,NA,5,0,4,0,1,1,NA,provided_single_use,TRUE,TRUE,FALSE,FALSE,FALSE
-9,2025-05-27T13:22:48Z,25,master,6,5,TRUE,1,TRUE,pass_on,take_home,2,NA,3,0,3,0,1,1,NA,provided_tupperware,TRUE,TRUE,FALSE,TRUE,TRUE
-10,2025-05-27T14:54:17Z,23,bachelor,6,5,TRUE,1,TRUE,throw_away,throw_away,1,NA,1,0,0,1,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
-11,2025-05-27T16:52:42Z,25,master,11,5,TRUE,1,TRUE,take_home,take_home,2,"i eat it if i can't take it home or offer anyone. when i'm really full, i wait until i feel i can finish my lunch.",4,0,4,0,1,1,respect for nature (that what i eat has belonged to a being and was taken to fulfill my needs),provided_tupperware,FALSE,FALSE,TRUE,TRUE,FALSE
-12,2025-05-27T17:20:14Z,22,master,2,5,TRUE,1,FALSE,pass_on,take_home,2,NA,5,0,5,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,FALSE
-13,2025-05-28T15:11:07Z,25,master,6,3,TRUE,1,FALSE,throw_away,throw_away,0,i always eat everything,3,3,0,0,1,1,NA,none,TRUE,FALSE,FALSE,TRUE,TRUE
-14,2025-05-30T15:50:44Z,22,bachelor,8,5,TRUE,1,FALSE,take_home,take_home,2,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,FALSE,TRUE,TRUE,TRUE
-15,2025-05-30T15:51:03Z,21,bachelor,6,3,TRUE,1,FALSE,pass_on,take_home,0,eat my whole meal,4,4,0,0,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-16,2025-05-30T15:52:22Z,24,bachelor,6,3,TRUE,1,FALSE,pass_on,throw_away,1,NA,3,2,1,0,1,1,NA,provided_tupperware,TRUE,FALSE,FALSE,FALSE,FALSE
-17,2025-05-30T15:53:05Z,21,master,2,5,TRUE,1,TRUE,take_home,take_home,0,NA,NA,NA,NA,NA,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-18,2025-05-30T15:54:04Z,28,phd,7,5,TRUE,1,FALSE,take_home,take_home,2,NA,5,0,5,0,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-19,2025-05-30T15:54:17Z,30,phd,10,3,TRUE,1,FALSE,take_home,take_home,0,NA,5,0,4,1,1,1,NA,tupperware,TRUE,TRUE,TRUE,TRUE,FALSE
-20,2025-05-30T15:54:59Z,23,bachelor,6,3,FALSE,2,FALSE,pass_on,throw_away,2,NA,3,3,0,0,1,1,NA,none,TRUE,FALSE,FALSE,FALSE,FALSE
-21,2025-05-30T15:55:03Z,22,bachelor,6,4,TRUE,1,FALSE,pass_on,take_home,2,NA,4,0,4,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,TRUE,TRUE
-22,2025-05-30T15:55:39Z,27,phd,10,3,TRUE,2,FALSE,pass_on,throw_away,2,NA,5,4,0,1,1,1,NA,none,FALSE,TRUE,FALSE,FALSE,FALSE
-23,2025-05-30T15:55:55Z,25,master,8,4,TRUE,1,TRUE,pass_on,take_home,0,NA,5,4,1,0,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-24,2025-05-30T15:56:13Z,23,master,4,4,TRUE,1,FALSE,pass_on,throw_away,2,NA,5,2,3,0,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
-25,2025-05-30T15:56:24Z,23,bachelor,8,2,TRUE,1,FALSE,take_home,take_home,0,NA,NA,NA,NA,NA,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,TRUE
-26,2025-05-30T15:56:26Z,24,master,9,5,TRUE,1,TRUE,pass_on,throw_away,2,NA,NA,NA,NA,NA,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,FALSE
-27,2025-05-30T15:56:52Z,23,master,4,2,FALSE,1,TRUE,take_home,take_home,2,NA,NA,NA,NA,NA,1,1,NA,provided_single_use,TRUE,FALSE,TRUE,TRUE,FALSE
-28,2025-05-30T15:57:19Z,21,bachelor,6,3,TRUE,2,FALSE,pass_on,throw_away,2,NA,5,3,0,2,1,1,NA,provided_tupperware,TRUE,FALSE,TRUE,FALSE,FALSE
-29,2025-05-30T15:58:06Z,24,master,10,4,TRUE,3,FALSE,pass_on,take_home,0,NA,5,1,3,1,1,1,reduce the amount of waste in general.,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
-30,2025-05-30T15:58:34Z,24,master,10,4,TRUE,3,FALSE,pass_on,throw_away,1,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
-31,2025-05-30T15:58:52Z,21,bachelor,8,5,TRUE,1,TRUE,pass_on,take_home,1,NA,0,0,0,0,1,1,the amount of food that is wasted around the world would be enough to essentially solve world hunger. we have to be more aware of our privilege.,provided_tupperware,FALSE,TRUE,TRUE,FALSE,FALSE
+1,2025-05-19T14:20:02Z,22,bachelor,6,4,TRUE,1,TRUE,pass_on,throw_away,yes,i have to 99% no leftovers because i am really hungry normally,1,1,0,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,TRUE,FALSE
+2,2025-05-19T14:47:54Z,21,master,4,5,TRUE,2,FALSE,pass_on,throw_away,yes,NA,3,0,0,0,1,1,NA,none,TRUE,FALSE,FALSE,FALSE,FALSE
+3,2025-05-19T18:06:41Z,26,phd,1,2,TRUE,1,FALSE,pass_on,throw_away,yes,NA,5,2,2,0,1,1,NA,provided_single_use,TRUE,FALSE,FALSE,FALSE,FALSE
+4,2025-05-19T22:08:31Z,22,bachelor,6,3,TRUE,2,FALSE,pass_on,throw_away,yes,NA,NA,NA,NA,NA,1,1,NA,none,FALSE,TRUE,FALSE,FALSE,FALSE
+5,2025-05-27T12:39:41Z,26,master,1,4,TRUE,1,TRUE,throw_away,take_home,sometimes,"not buying menus, but choosing from the buffet and paying per gr, which is often more expensive",NA,NA,NA,NA,1,1,the people starving,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+6,2025-05-27T12:51:14Z,25,master,2,4,TRUE,1,FALSE,pass_on,take_home,yes,"i always make my own lunch, because it is cheaper",4,0,4,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,TRUE
+7,2025-05-27T13:08:26Z,24,master,10,5,TRUE,1,FALSE,pass_on,take_home,yes,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,TRUE
+8,2025-05-27T13:16:11Z,21,bachelor,2,4,TRUE,1,TRUE,pass_on,take_home,yes,NA,5,0,4,0,1,1,NA,provided_single_use,TRUE,TRUE,FALSE,FALSE,FALSE
+9,2025-05-27T13:22:48Z,25,master,6,5,TRUE,1,TRUE,pass_on,take_home,yes,NA,3,0,3,0,1,1,NA,provided_tupperware,TRUE,TRUE,FALSE,TRUE,TRUE
+10,2025-05-27T14:54:17Z,23,bachelor,6,5,TRUE,1,TRUE,throw_away,throw_away,sometimes,NA,1,0,0,1,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
+11,2025-05-27T16:52:42Z,25,master,11,5,TRUE,1,TRUE,take_home,take_home,yes,"i eat it if i can't take it home or offer anyone. when i'm really full, i wait until i feel i can finish my lunch.",4,0,4,0,1,1,respect for nature (that what i eat has belonged to a being and was taken to fulfill my needs),provided_tupperware,FALSE,FALSE,TRUE,TRUE,FALSE
+12,2025-05-27T17:20:14Z,22,master,2,5,TRUE,1,FALSE,pass_on,take_home,yes,NA,5,0,5,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,FALSE
+13,2025-05-28T15:11:07Z,25,master,6,3,TRUE,1,FALSE,throw_away,throw_away,no,i always eat everything,3,3,0,0,1,1,NA,none,TRUE,FALSE,FALSE,TRUE,TRUE
+14,2025-05-30T15:50:44Z,22,bachelor,8,5,TRUE,1,FALSE,take_home,take_home,yes,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,FALSE,TRUE,TRUE,TRUE
+15,2025-05-30T15:51:03Z,21,bachelor,6,3,TRUE,1,FALSE,pass_on,take_home,no,eat my whole meal,4,4,0,0,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+16,2025-05-30T15:52:22Z,24,bachelor,6,3,TRUE,1,FALSE,pass_on,throw_away,sometimes,NA,3,2,1,0,1,1,NA,provided_tupperware,TRUE,FALSE,FALSE,FALSE,FALSE
+17,2025-05-30T15:53:05Z,21,master,2,5,TRUE,1,TRUE,take_home,take_home,no,NA,NA,NA,NA,NA,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+18,2025-05-30T15:54:04Z,28,phd,7,5,TRUE,1,FALSE,take_home,take_home,yes,NA,5,0,5,0,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+19,2025-05-30T15:54:17Z,30,phd,10,3,TRUE,1,FALSE,take_home,take_home,no,NA,5,0,4,1,1,1,NA,tupperware,TRUE,TRUE,TRUE,TRUE,FALSE
+20,2025-05-30T15:54:59Z,23,bachelor,6,3,FALSE,2,FALSE,pass_on,throw_away,yes,NA,3,3,0,0,1,1,NA,none,TRUE,FALSE,FALSE,FALSE,FALSE
+21,2025-05-30T15:55:03Z,22,bachelor,6,4,TRUE,1,FALSE,pass_on,take_home,yes,NA,4,0,4,0,1,1,NA,tupperware,TRUE,TRUE,FALSE,TRUE,TRUE
+22,2025-05-30T15:55:39Z,27,phd,10,3,TRUE,2,FALSE,pass_on,throw_away,yes,NA,5,4,0,1,1,1,NA,none,FALSE,TRUE,FALSE,FALSE,FALSE
+23,2025-05-30T15:55:55Z,25,master,8,4,TRUE,1,TRUE,pass_on,take_home,no,NA,5,4,1,0,1,1,NA,tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+24,2025-05-30T15:56:13Z,23,master,4,4,TRUE,1,FALSE,pass_on,throw_away,yes,NA,5,2,3,0,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
+25,2025-05-30T15:56:24Z,23,bachelor,8,2,TRUE,1,FALSE,take_home,take_home,no,NA,NA,NA,NA,NA,1,1,NA,tupperware,FALSE,TRUE,FALSE,FALSE,TRUE
+26,2025-05-30T15:56:26Z,24,master,9,5,TRUE,1,TRUE,pass_on,throw_away,yes,NA,NA,NA,NA,NA,1,1,NA,tupperware,TRUE,TRUE,FALSE,FALSE,FALSE
+27,2025-05-30T15:56:52Z,23,master,4,2,FALSE,1,TRUE,take_home,take_home,yes,NA,NA,NA,NA,NA,1,1,NA,provided_single_use,TRUE,FALSE,TRUE,TRUE,FALSE
+28,2025-05-30T15:57:19Z,21,bachelor,6,3,TRUE,2,FALSE,pass_on,throw_away,yes,NA,5,3,0,2,1,1,NA,provided_tupperware,TRUE,FALSE,TRUE,FALSE,FALSE
+29,2025-05-30T15:58:06Z,24,master,10,4,TRUE,3,FALSE,pass_on,take_home,no,NA,5,1,3,1,1,1,reduce the amount of waste in general.,tupperware,FALSE,TRUE,FALSE,FALSE,FALSE
+30,2025-05-30T15:58:34Z,24,master,10,4,TRUE,3,FALSE,pass_on,throw_away,sometimes,NA,NA,NA,NA,NA,1,1,NA,provided_tupperware,TRUE,TRUE,TRUE,FALSE,FALSE
+31,2025-05-30T15:58:52Z,21,bachelor,8,5,TRUE,1,TRUE,pass_on,take_home,sometimes,NA,0,0,0,0,1,1,the amount of food that is wasted around the world would be enough to essentially solve world hunger. we have to be more aware of our privilege.,provided_tupperware,FALSE,TRUE,TRUE,FALSE,FALSE

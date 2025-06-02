@@ -55,11 +55,6 @@ processed <- unprocessed |>
       encouragement == "having access to reusable tupperware for a desposit (e.g. recircle)" ~ "provided_tupperware",
       encouragement == "none of those" ~ "none"
     ),
-    food_avoidance = case_when(
-      food_avoidance == "yes" ~ 2,
-      food_avoidance == "sometimes" ~ 1,
-      food_avoidance == "no" ~ 0
-    ),
     strategies = case_when(
       strategies == "null" ~ NA_character_,
       TRUE ~ strategies
