@@ -1,7 +1,7 @@
 variable_name,description
 date_time,date and time of entry
 age_years,age in years
-student_type,"students cycle (bachelor's, masters's, phd)"
+student_type,"study cycle (bachelor's, masters's, phd)"
 semester,currently enrolled semester number
 consciousness,self-reported consciousness of food waste
 motivation_sustainability,is motivated to care about food waste by sustainability/ environmental impact

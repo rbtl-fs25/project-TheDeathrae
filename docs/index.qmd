@@ -25,7 +25,6 @@ library(ggthemes)
 
 source(here::here("R/01-data_download.R"))
 source(here::here("R/02-data_cleaning.R"))
-
 ```
 
 # Introduction
@@ -35,7 +34,7 @@ In 2019, global food production accounted for approximately 31% of worldwide gre
 # Methods
 
 Data was collected anonymously using a self-administered online questionnaire created in Google Forms. A total of 31 participants were surveyed by: (1) direct in-person approach, where a QR code for participation was presented to passing students outside on campus on a weekday during the semester over a span of 20 minutes; (2) posters with QR codes displayed on central university notice boards in buildings on both ETH Zurich campuses for 12 days; and (3) digital distribution of a link through a student-specific group chat.\
-In all cases, the purpose of the project was explained beforehand, and responses were submitted voluntarily without supervision. The survey was open for responses for 12 days, excluding a prior testing period.
+In all cases, the purpose of the project was explained beforehand, and responses were submitted voluntarily without supervision. The survey was open to responses for 12 days, excluding a prior testing period.
 
 # Results
 
@@ -64,8 +63,8 @@ consciousness_data <- survey_data |>
 ggplot(data = consciousness_data, 
        aes(x = consciousness, 
            fill = student_type)) +
-  labs(x = "Consciousness Level",
-       y = "Count",
+  labs(x = "Consciousness level (1-5)",
+       y = "Number of students",
        fill = "Study Cycle") +
   geom_bar(col = "grey30") +
   theme_igray() +
@@ -171,7 +170,7 @@ ggplot(data = scenario_data,
 write_csv(scenario_data, here::here("data/final/fig-scenarios.csv"))
 ```
 
-@fig-encouragement shows that there is potential to increase the willingness to take leftovers home when eating in university cafeterias and thus reduce food waste. Most students reported that having either their own reusable containers or having access to such would make them more likely to take leftovers home. This may reflect that while reusable containers are widely available at ETH Zurich cafeterias, the system is not implemented in a way that encourages use for leftovers or that knowledge of its existence is not widespread.
+@fig-encouragement shows that there is potential to increase the willingness to take leftovers home when eating in university cafeterias and thus reduce food waste. Most students reported that having either their own reusable containers or having access to such would make them more likely to take leftovers home. This may reflect that, although reusable containers are widely available at ETH Zurich cafeterias, the system does not actively encourage their use for leftovers or that knowledge of its existence is not widespread.
 
 ```{r}
 #| label: fig-encouragement
@@ -228,36 +227,17 @@ ggplot(data = portions_data,
   labs(x = "Choice",
        y = "Number of students")
 
-write_csv(encouragement_data, here::here("data/final/fig-portions.csv"))
-```
-
-```{r}
-#| label: tbl-avoidance
-#| tbl-cap: "Avoidance of dislikes in cafeteria food"
-
-avoidance_data <- survey_data |> 
-  select(food_avoidance) |> 
-  count(food_avoidance) |> 
-  rename("Avoidance" = "food_avoidance",
-         "Number of students" = "n") |> 
-  mutate(Avoidance = case_when(
-    Avoidance == "yes" ~ "Yes",
-    Avoidance == "sometimes" ~ "Sometimes",
-    Avoidance == "no" ~ "No",
-  ))
-
-avoidance_data |> 
-  knitr::kable(digits = 0)
-
-write_csv(avoidance_data, here::here("data/final/tbl-avoidance.csv"))
+write_csv(portions_data, here::here("data/final/fig-portions.csv"))
 ```
 
 # Conclusions
 
--   Students report high levels of consciousness of food waste, with the vast majority considering sustainability as a motivation
+-   Students report high levels of consciousness of food waste, with 94% considering sustainability as a motivation
 
--   University cafeterias are a common sources of weekday lunch in university and lead to more food waste than other sources
+-   University cafeterias are a common source of lunch on weekdays and contribute to more waste than other sources
 
--   
+-   Strategies to lower food waste such as sharing or taking home leftovers are widely used by students
+
+-   Better access to reusable containers for leftovers and encouragement of portion size variation in university cafeterias show potential for reduction of food waste
 
 # References
